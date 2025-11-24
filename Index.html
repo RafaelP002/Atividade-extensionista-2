@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão Digital - Comunidade Abolição</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            color: white;
+            padding: 60px 0;
+            border-radius: 0 0 20px 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .icon-large {
+            font-size: 3rem;
+            color: #0d6efd;
+            margin-bottom: 15px;
+        }
+        .step-box {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border-left: 5px solid #0d6efd;
+            font-size: 1.1rem;
+        }
+        .curiosity-box {
+            background-color: #fff3cd;
+            border-color: #ffc107;
+            color: #664d03;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        /* Ajuste para o iframe não ter bordas feias */
+        iframe {
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Conectando a Abolição</h1>
+            <p class="lead">Assista aos vídeos e leia o passo a passo para aprender no seu ritmo.</p>
+            <a href="#cursos" class="btn btn-light btn-lg mt-3 fw-bold">Começar Aulas</a>
+        </div>
+    </header>
+
+    <div class="container" id="cursos">
+        <div class="row g-4">
+            
+            <div class="col-6 col-lg-3">
+                <div class="card text-center p-4">
+                    <div class="card-body">
+                        <i class="bi bi-whatsapp icon-large text-success"></i>
+                        <h3 class="card-title">WhatsApp</h3>
+                        <p class="card-text">Dominando o app: áudios, fotos e segurança básica.</p>
+                        <button type="button" class="btn btn-success w-100" data-bs-toggle="modal" data-bs-target="#modalWhatsapp">
+                            <i class="bi bi-play-circle-fill"></i> Acessar Aula
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card text-center p-4">
+                    <div class="card-body">
+                        <i class="bi bi-envelope-at icon-large text-warning"></i>
+                        <h3 class="card-title">E-mail Básico</h3>
+                        <p class="card-text">Crie sua conta e aprenda a enviar e receber mensagens.</p>
+                        <button type="button" class="btn btn-warning w-100" data-bs-toggle="modal" data-bs-target="#modalEmail">
+                            <i class="bi bi-play-circle-fill"></i> Acessar Aula
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card text-center p-4">
+                    <div class="card-body">
+                        <i class="bi bi-buildings icon-large text-primary"></i>
+                        <h3 class="card-title">Gov.br</h3>
+                        <p class="card-text">Aprenda a acessar serviços públicos e documentos digitais.</p>
+                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#modalGovbr">
+                            <i class="bi bi-play-circle-fill"></i> Acessar Aula
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="card text-center p-4">
+                    <div class="card-body">
+                        <i class="bi bi-shield-lock icon-large text-danger"></i>
+                        <h3 class="card-title">Segurança</h3>
+                        <p class="card-text">Dicas essenciais para identificar golpes e proteger seus dados.</p>
+                        <button type="button" class="btn btn-danger w-100" data-bs-toggle="modal" data-bs-target="#modalSeguranca">
+                            <i class="bi bi-play-circle-fill"></i> Acessar Aula
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="text-center mt-5 py-4 text-muted border-top">
+        <div class="container">
+            <p>© 2025 Atividade Extensionista - CST em Análise e Desenvolvimento de Sistemas</p>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modalWhatsapp" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Aula: Dominando o WhatsApp</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe src="https://www.youtube.com/embed/dR5PNZhaLzU?si=hjZMBKDBnkV3nEaT" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+
+                    <h4 class="mb-3"><i class="bi bi-book"></i> Passo a Passo Escrito:</h4>
+                    
+                    <h5>1. Salvando um Novo Contato:</h5>
+                    <div class="step-box">
+                        <strong>Passo 1:</strong> Abra o WhatsApp e toque no ícone verde de "Nova Conversa" (canto inferior direito).
+                    </div>
+                    <div class="step-box">
+                        <strong>Passo 2:</strong> Selecione a opção "Novo Contato". Digite o nome e o número completo (com o DDD, ex: 21).
+                    </div>
+                    <div class="step-box">
+                        <strong>Passo 3:</strong> Clique em "Salvar". O novo contato aparecerá automaticamente na sua lista.
+                    </div>
+                    
+                    <h5>2. Enviando uma Foto/Vídeo:</h5>
+                    <div class="step-box">
+                        <strong>Passo 4:</strong> Abra a conversa, toque no ícone de clip/câmera. Escolha "Galeria" para fotos antigas ou "Câmera" para tirar na hora.
+                    </div>
+
+                    <div class="curiosity-box">
+                        <i class="bi bi-lightbulb-fill"></i> **Curiosidade da Segurança:** O WhatsApp usa "criptografia de ponta a ponta". Isso significa que só você e a pessoa com quem você fala podem ler as mensagens. Nem mesmo o WhatsApp consegue ler o que vocês conversam!
+                    </div>
+
+                    <hr>
+                    <div class="alert alert-warning">
+                        <i class="bi bi-exclamation-triangle-fill"></i> <strong>Alerta de Golpe:</strong> Nunca passe códigos de 6 dígitos que chegam por SMS. Seu WhatsApp é seu, e esse código é a chave para o roubo da sua conta!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalEmail" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title">Aula: E-mail Básico</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe src="https://www.youtube.com/embed/vwy5JlrGD5s" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+
+                    <h4 class="mb-3"><i class="bi bi-book"></i> Passo a Passo Escrito:</h4>
+
+                    <h5>1. Criando sua Conta de E-mail (Gmail):</h5>
+                    <div class="step-box">
+                        <strong>Passo 1:</strong> Abra o aplicativo Gmail (o envelope vermelho) ou o navegador e busque "Criar conta Gmail".
+                    </div>
+                    <div class="step-box">
+                        <strong>Passo 2:</strong> Preencha seu nome, sobrenome e a data de nascimento.
+                    </div>
+                    <div class="step-box">
+                        <strong>Passo 3:</strong> Escolha seu endereço (ex: `joaodasilva.aboli@gmail.com`) e crie uma senha forte. Anote!
+                    </div>
+
+                    <h5>2. Enviando seu Primeiro E-mail:</h5>
+                    <div class="step-box">
+                        <strong>Passo 4:</strong> No aplicativo, toque em "Escrever" (o ícone de lápis ou "+").
+                    </div>
+                    <div class="step-box">
+                        <strong>Passo 5:</strong> No campo "Para", digite o endereço de e-mail do destinatário.
+                    </div>
+                    <div class="step-box">
+                        <strong>Passo 6:</strong> Escreva um "Assunto" claro e, em seguida, o corpo da mensagem. Clique em "Enviar".
+                    </div>
+
+                    <div class="curiosity-box">
+                        <i class="bi bi-lightbulb-fill"></i> **Curiosidade do E-mail:** Nos campos "CC" e "CCO" você pode colocar outras pessoas. "CC" é cópia (todos veem quem recebeu). "CCO" é cópia oculta (ninguém vê quem recebeu). Use CCO para proteger o e-mail das pessoas!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalGovbr" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Aula: Gov.br - Acesso Cidadão</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe src="https://www.youtube.com/embed/T787BjPZVfU" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+
+                    <h4 class="mb-3"><i class="bi bi-book"></i> Passo a Passo Escrito:</h4>
+
+                    <h5>1. Criando ou Acessando sua Conta:</h5>
+                    <div class="step-box">
+                        <strong>Passo 1:</strong> Abra o navegador e digite <em>www.gov.br</em> na barra de endereço.
+                    </div>
+                    <div class="step-box">
+                        <strong>Passo 2:</strong> Clique em "Entrar com Gov.br" e digite seu CPF na tela inicial.
+                    </div>
+                    <div class="step-box">
+                        <strong>Passo 3:</strong> Use o reconhecimento facial no app ou o seu banco para aumentar o nível de segurança da sua conta (Nível Prata ou Ouro).
+                    </div>
+
+                    <h5>2. Onde achar documentos importantes:</h5>
+                    <div class="step-box">
+                        <strong>Passo 4:</strong> Dentro do site, busque por "Carteira de Trabalho Digital", "Certificado de Vacinação" ou "Serviços do INSS".
+                    </div>
+
+                    <div class="curiosity-box">
+                        <i class="bi bi-lightbulb-fill"></i> **Curiosidade da Conta:** Se você consegue acessar o Gov.br com o **nível Prata ou Ouro**, você pode usar sua CNH Digital (Carteira de Motorista) e todos os seus documentos de forma legal no celular, sem precisar carregar os documentos físicos!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalSeguranca" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">Aula: Segurança na Internet</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    
+                    <div class="ratio ratio-16x9 mb-4">
+                        <iframe src="https://www.youtube.com/embed/rVF-fUzfr6M" title="YouTube video player" allowfullscreen></iframe>
+                    </div>
+
+                    <h4 class="mb-3"><i class="bi bi-book"></i> Dicas Importantes:</h4>
+
+                    <h5>1. Verificando a Confiança do Site:</h5>
+                    <div class="step-box">
+                        <strong>Dica 1:</strong> Olhe o endereço do site (o link lá em cima). Ele deve começar com **https://**. Se for só **http://** (sem o S), não é seguro.
+                    </div>
+                    <div class="step-box">
+                        <strong>Dica 2:</strong> Sempre olhe o **cadeado** ao lado do endereço. Se ele estiver fechado, a conexão entre seu celular e o site é protegida.
+                    </div>
+                    
+                    <h5>2. Protegendo suas Senhas:</h5>
+                    <div class="step-box">
+                        <strong>Dica 3:</strong> Crie senhas fortes. Use letras maiúsculas e minúsculas, números e símbolos (Ex: `!@#$%`).
+                    </div>
+                    <div class="step-box">
+                        <strong>Dica 4:</strong> Nunca use a mesma senha para o banco, e-mail e redes sociais. Se uma vazar, todas estarão em risco.
+                    </div>
+
+                    <div class="curiosity-box">
+                        <i class="bi bi-lightbulb-fill"></i> **Curiosidade: Phishing** (Pescaria Digital). É quando golpistas enviam e-mails ou mensagens falsas, fingindo ser o seu banco ou uma loja famosa, para te fazer clicar em um link. Eles estão "pescando" suas informações! Nunca clique em links de origem desconhecida.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
